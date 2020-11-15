@@ -48,36 +48,17 @@ public class TeamActivity extends Activity {
     }
     private void initTeam(){
         RecyclerView mRecycleview = findViewById(R.id.listView);
-      
-       setTeamMember("Ritzz", getString(R.string.developer_title)
-                + " / " + getString(R.string.maintainer_title), "riteshm321", "ritzz97", 
-                R.drawable.ritzz);
-        setTeamMember("Jughead", getString(R.string.developer_title), "jughead069", "jughead069",
-                R.drawable.jughead);
-        setTeamMember("Samuel", getString(R.string.developer_title)
-                + " / " + getString(R.string.maintainer_title), "DeadmanxXD", "deadmanxxd",
-                R.drawable.deadmanxxd);
-       setTeamMember("Zeeshan", getString(R.string.developer_title)
-                + " / " + getString(R.string.maintainer_title), "HeartStealer786", "NAHSEEZ", 
-                R.drawable.zeeshan);
-       setTeamMember("Aashil", getString(R.string.developer_title), "aashil123", "tempyourdaddy",
-                R.drawable.ashil);       
-        setTeamMember("Ronald Santos", getString(R.string.maintainer_title), "ronald-b", "RonaldSt",
-                R.drawable.ronald);
-        setTeamMember("Shivam Kumar", getString(R.string.maintainer_title), "ShivamKumar2002", "ShivamKumar2002",
-                R.drawable.shivam);
-        setTeamMember("Azaharuddin", getString(R.string.maintainer_title), "aza786", "Azahar123",
-                R.drawable.azahar);
-        setTeamMember("Victor", getString(R.string.maintainer_title), "merser2005", "merser2005",
-                R.drawable.merser);
-        setTeamMember("ᴀꜱʜᴡᴀᴛᴛʜᴀᴍᴀ", getString(R.string.maintainer_title), "sai4041412", "saisamy95",
-                R.drawable.sai);
-        setTeamMember("Aditya", getString(R.string.maintainer_title), "meetaditya", "meetaditya",
-                R.drawable.aditya);
-        setTeamMember("PKM774", getString(R.string.maintainer_title), "pkm774", "pkm774",
-                R.drawable.pkm);
-        setTeamMember("Introdructor", getString(R.string.maintainer_title), "Introdructor", "Introdructor",
-                R.drawable.Introdructor);
+
+      setTeamMember("Aryan Gupta", getString(R.string.leaddeveloper_title), "darkbeast69", "heisinbug",
+                R.drawable.aryan);
+      setTeamMember("Ralf979", getString(R.string.developer_title), "ralf979", "Ralf979",
+                R.drawable.ralf);
+       setTeamMember("CHIRISL7", getString(R.string.developer_title), "", "CHRISL7",
+                R.drawable.cruz);
+       setTeamMember("Tdotk", getString(R.string.graphicsdesigner_title), "", "tdotk",
+                R.drawable.dinesh);
+       setTeamMember("Akshat", getString(R.string.graphicsdesigner_title), "", "Akshat8",
+                R.drawable.dinesh);
 
         ListAdapter mAdapter = new ListAdapter(mList);
         mRecycleview.setAdapter(mAdapter);
