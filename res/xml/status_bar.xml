@@ -38,7 +38,7 @@
 
    <PreferenceCategory
         android:key="qs_category"
-        android:title="@string/notification_panel_category">
+        android:title="@string/notifications_panel_category">
 
         <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.extensions;
+package org.pixelextended.snowhouse;
 
 import android.content.Context;
 

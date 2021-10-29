@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.extensions.categories;
+package org.pixelextended.snowhouse.categories;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,7 +34,6 @@ public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "System";
-    private static final String PREF_BATTERY = "battery";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,7 +48,7 @@ public class System extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTENSIONS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override

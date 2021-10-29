@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.aospextended.extensions;
+package org.pixelextended.snowhouse;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -53,16 +53,16 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
 
-import org.aospextended.extensions.categories.Lockscreen;
-import org.aospextended.extensions.categories.NavigationAndRecents;
-import org.aospextended.extensions.categories.NotificationsPanel;
-import org.aospextended.extensions.categories.StatusBar;
-import org.aospextended.extensions.categories.System;
+import org.pixelextended.snowhouse.categories.Lockscreen;
+import org.pixelextended.snowhouse.categories.NavigationAndRecents;
+import org.pixelextended.snowhouse.categories.NotificationsPanel;
+import org.pixelextended.snowhouse.categories.StatusBar;
+import org.pixelextended.snowhouse.categories.System;
 
-import org.aospextended.extensions.navigation.BubbleNavigationConstraintView;
-import org.aospextended.extensions.navigation.BubbleNavigationChangeListener;
+import org.pixelextended.snowhouse.navigation.BubbleNavigationConstraintView;
+import org.pixelextended.snowhouse.navigation.BubbleNavigationChangeListener;
 
-public class Extensions extends SettingsPreferenceFragment implements   
+public class SnowHouse extends SettingsPreferenceFragment implements   
        Preference.OnPreferenceChangeListener {
 
     private static final int MENU_HELP  = 0;
@@ -84,13 +84,11 @@ public class Extensions extends SettingsPreferenceFragment implements
             public void onNavigationChanged(View view, int position) {
                 if (view.getId() == R.id.status_bar_category) {
                     viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.notifications_panel_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.navigation_and_recents_category) {
-                    viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.lockscreen_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.system_category) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.hardware_category) {
                     viewPager.setCurrentItem(position, true);
                 }
             }
@@ -124,10 +122,9 @@ public class Extensions extends SettingsPreferenceFragment implements
         PagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new StatusBar();
-            frags[1] = new NotificationsPanel();
-            frags[2] = new NavigationAndRecents();
-            frags[3] = new Lockscreen();
-            frags[4] = new System();
+            frags[1] = new Lockscreen();
+            frags[2] = new System();
+            frags[3] = new Hardware();
         }
 
         @Override
@@ -150,10 +147,9 @@ public class Extensions extends SettingsPreferenceFragment implements
         String titleString[];
         titleString = new String[]{
             getString(R.string.status_bar_category),
-            getString(R.string.notifications_panel_category),
-            getString(R.string.navigation_and_recents_category),
             getString(R.string.lockscreen_category),
-            getString(R.string.system_category)};
+            getString(R.string.system_category),
+            getString(R.string.hardware_category)};
 
         return titleString;
     }
@@ -172,7 +168,7 @@ public class Extensions extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTENSIONS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override
