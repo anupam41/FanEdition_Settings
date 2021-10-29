@@ -1,4 +1,4 @@
-package org.aospextended.extensions.navigation;
+package org.pixelextended.snowhouse.navigation;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import android.view.View;
 
 import com.android.settings.R;
 
-import org.aospextended.extensions.navigation.BubbleNavigationChangeListener;
+import org.pixelextended.snowhouse.navigation.BubbleNavigationChangeListener;
 
 import java.util.ArrayList;
 

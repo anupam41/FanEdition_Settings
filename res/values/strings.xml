@@ -19,7 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="extensions_title">Extensions</string>
+    <string name="extensions_title">SnowHouse</string>
     <string name="add">Add</string>
     <string name="advanced">Advanced</string>
     <string name="cancel">Cancel</string>
@@ -37,12 +37,13 @@
 
     <!-- Extensions categories -->
     <string name="status_bar_category">Statusbar</string>
-    <string name="notifications_panel_category">QS panel</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="navigation_and_recents_category">Navigation</string>
-    <string name="build_tweaks_summary_title">Extend your device!</string>
+    <string name="hardware_category">Hardware</string>
+    <string name="build_tweaks_summary_title">Things are really cold here!</string>
     <string name="listview">ListView</string>
+
+    <string name="qs_category">Quick Settings</string>
 
     <!-- App info dialog -->
     <string name="extensions_dialog_title">Help us help you!</string>

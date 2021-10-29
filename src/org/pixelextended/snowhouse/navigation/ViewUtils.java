@@ -1,4 +1,4 @@
-package org.aospextended.extensions.navigation;
+package org.pixelextended.snowhouse.navigation;
 
 import android.content.Context;
 import android.graphics.PorterDuff;

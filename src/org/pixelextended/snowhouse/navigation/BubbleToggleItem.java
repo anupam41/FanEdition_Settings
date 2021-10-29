@@ -1,4 +1,4 @@
-package org.aospextended.extensions.navigation;
+package org.pixelextended.snowhouse.navigation;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
